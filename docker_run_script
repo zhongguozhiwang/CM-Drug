@@ -1,5 +1,10 @@
-#!/usr/bin/env bash
+##This file is created by Yun Xia and Chun-Jie Liu
+##please cite this article as: (https://www.nature.com/articles/s41590-024-01789-x)
 
+Yun Xia, Xin Li, Nana Bie, Wen Pan, Ya-Ru Miao, Mei Yang, Yan Gao, Chuang Chen, Hanqing Liu, Lu Gan, An-Yuan Guo.
+A method for predicting drugs that can boost efficacy of immune checkpoint blockade, Nature Immunology.
+
+#!/usr/bin/env bash
 param=$#
 serv=$1
 variable=$2
