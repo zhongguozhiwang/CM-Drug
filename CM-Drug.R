@@ -217,16 +217,6 @@ for (indext_iii in 1) {
   tempPath = sprintf('pertInfo.%s', dir_kkk)
   metadata = fread(input = tempPath, sep = '\t', header = TRUE, data.table = FALSE)
   
-  # ----- Sample Metadata -----
-  
-  cat('Generating Sample Metadata.\n')
-  
-  #in original data, -666 means NA, now tidy the data 
-  metadata = metadata[!grepl('^-666', metadata$pert_iname), ]
-  metadata$pert_dose_unit[metadata$pert_dose == -666] = NA
-  metadata$pert_dose[metadata$pert_dose == -666] = NA
-  metadata$pert_dose[metadata$pert_time == -666] = NA
-  
   metadata$pert_cdose = sprintf(
     '%s%s',
     metadata$pert_dose,
